@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apirequest = axios.create({
-    baseURL: "http://localhost:8800/api",
+    baseURL: "https://project-backend-jade.vercel.app",
     withCredentials: true,
 });
 
