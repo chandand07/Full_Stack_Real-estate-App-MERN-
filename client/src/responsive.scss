@@ -1,0 +1,39 @@
+// Media query syntax
+// @media not|only mediatype and (expressions)
+// {
+//     CSS - code;
+// }
+
+
+// for example
+
+// @media only screen and (max-widht: 455px){
+//      body{
+//              background-color: blue;  
+//      } 
+// }
+
+// means if width is less than 455px then color will change to blue
+
+
+// for small screen
+@mixin sm{
+    @media(max-width:738px){
+        @content;
+    }
+}
+
+// for medium screen
+@mixin md{
+    @media(max-width:1024px){
+        @content;
+    }
+}
+
+
+// for large screen
+@mixin lg{
+    @media(max-width:1366px){
+        @content;
+    }
+}
